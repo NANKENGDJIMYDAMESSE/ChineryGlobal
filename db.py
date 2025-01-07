@@ -9,11 +9,11 @@ class Connection:
                 password="")
             self.mycursor = self.mydb.cursor()
         except:
-            print("Database connection error")
+            print("Erreur de connection a la base de donnees")
             import sys
             sys.exit(0)
         else:
-            print("Database connection successful")
+            print("Connection reussie a la base de donnees")
     
     def register(self,name,email,password):
         try:
