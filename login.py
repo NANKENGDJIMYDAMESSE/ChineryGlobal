@@ -28,13 +28,13 @@ class flipcart:
         password = input("enter password :")
         response =self.conn.register(name,email,password)
         if response:
-            print("Successfully registered")
+            print("Bienvenue")
         else:
-            print("Something went wrong")
+            print("Recommencer")
             self.menu()
     def login(self):
-        email = input("Enter your email: ")
-        password = input("Enter your password: ")
+        email = input("Entrer votre email: ")
+        password = input("Entrer votre mot de passe: ")
         response = self.conn.search(email,password)
         
         
